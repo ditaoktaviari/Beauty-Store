@@ -1,0 +1,660 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(32, 32, 32);
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: rgb(32, 32, 32);
+}
+.container{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    overflow: hidden;
+}
+.header{
+    width: 100%;
+    height: 650px;
+    background-image: url(../image/slider-1.jpg);
+    background-size: contain;
+    background-attachment: fixed;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: white;
+    background-repeat: no-repeat;
+}
+.nav{
+    width: 100%;
+    height: 20%;
+    padding: 2% 0% 0% 0%;
+}
+.nav:hover{
+    background-color: #feebe7;
+    transition-duration: .7s;
+    transition-timing-function: ease-in-out;
+    opacity: .9;
+}
+.nav-1{
+    width: 100%;
+    height: 50%;
+}
+.nav-1 ul.first{
+    list-style: none;
+    float: left;
+    display: none;
+}
+.nav-1 ul.first li{
+    font-size: 2vw;
+}
+.nav-1 ul.secondary{
+    display: none;
+    float: left;
+    width: 40%;
+    height: auto;
+    background-color: black;
+    position: absolute;
+    opacity: .9;
+    z-index: 100;
+    margin-top: -2%;
+}
+.nav-1 ul.secondary li{
+    width: 100%;
+    padding: 2% 0%;
+    text-align: left;
+}
+.nav-1 ul.secondary li a{
+    z-index: 200;
+    font-size: 1.8vw;
+    color: white;
+}
+.nav-1 ul.secondary li:first-child a{
+    padding-top: 5%;
+    float: right;
+    margin-right: 5%;
+}
+.nav-1 ul.secondary li:last-child{
+    padding-bottom: 5%;
+}
+.nav-1 img{
+    margin-left: 42%;
+    width: 10%;
+    height: 100%;
+}
+.nav-1 ul{
+    list-style: none;
+    float: right;
+    margin-right: 3%;
+    width: 7%;
+    display: block;
+    margin-top: 1.5%;
+}
+.nav-1 ul li{
+    float: left;
+    padding: 1% 13%;
+    text-align: center;
+}
+.nav-1 ul li#cart{
+    display: none;
+}
+.nav-1 ul li a{
+    font-size: 1.3vw;
+}
+.nav-2{
+    margin-top: -1%;
+    clear: both;
+    width: 100%;
+    height: 50%;
+}
+.nav-2 ul{
+    height: 20%;
+    list-style: none;
+}
+.nav-2 ul li{
+    float: left;
+    padding: 1.5% 1.5%;
+}
+.nav-2 ul li a{
+    font-size: 1.13vw;
+    color: #474747;
+}
+.nav-2 ul li:first-child{
+    margin-left: 33%;
+}
+.nav-2 ul li:last-child{
+    float: right;
+    margin-right: 2%;
+}
+.header-title{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 40%;
+    color: rgb(105, 105, 105);
+}
+.header-title h1{
+    color: #414040;
+    letter-spacing: 2px;
+    font-size: 3vw;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.header-title p{
+    line-height: 145%;
+    font-size: 1.28vw;
+    display: block;
+}
+.header-button{
+    padding: 1.5% 1%;
+    width: 23%;
+    color: white;
+    background-color: rgb(255, 188, 166);
+    text-align: center;
+    font-size: 1.3vw;
+}
+.header-button:hover{
+    background-color:  #414040; 
+    transition: all .4s ease-in-out;
+    text-transform: capitalize;
+    color: white;
+}
+/*welcome*/
+.welcome{
+    width: 100%;
+    height: auto;
+    padding-bottom: 2%;
+    padding-top: 4%;
+    background-color: #feebe7;
+    text-align: center;
+    letter-spacing: 1px;
+    color: black;
+    font-size: 1.25vw;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.welcome h2{
+    letter-spacing: 1px;
+    margin: 0 0 -5px;
+    font-weight: normal;
+    color: #585757;
+    font-size: 1.5vw;
+}
+.welcome p{
+    color: #616161;
+    padding: 0% 18%;
+    margin-top: -.1%;
+    font-size: 1.3vw;
+    line-height: 1.6em;
+}
+/*produk*/
+.produk, .blog{
+    width: 100%;
+    height: auto;
+    padding: 3% 0%;
+    background-color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.produk h2, .blog h2{
+    text-align: center;
+    letter-spacing: 2px;
+    color: #3a3a3a;
+    font-size: 1.7vw;
+}
+.produk hr, .blog hr{
+    width: 5%;
+    color: #ffcac0;
+    border: 2px #ffcac0 solid;
+    margin-bottom: 4%;
+    margin-left: 47%;
+}
+.produk ul, .blog ul{
+    margin-left: -1%;
+}
+.produk ul li, .blog ul li{
+    float: left;
+    width: 30%;
+    height: 60%;
+    margin-left: 2%;
+    list-style: none;
+    text-align: center;
+    color: #3a3a3a;
+    font-size: 1.2vw;
+}
+.produk2, .blog-conten{
+    width: 100%;
+    padding-bottom: 10%;
+}
+.produk2:hover .produk-more{
+    display: block;
+    transition: .5s ease-in-out;
+}
+.produk2 img{
+    width: 100%;
+    height: 24vw;
+}
+.produk-more{
+    background-color: white;
+    opacity: .9;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: -24.3vw;
+    display: none;
+    padding: 30.9% 0%;
+    z-index: 1;
+}
+.produk-more p{
+    color: #3a3a3a;
+    text-align: center;
+    font-size: 1.2vw;
+}
+.produk-more p a{
+    color: white;
+    font-size: 1vw;
+    padding: 2% 3%;
+    background-color: #ff6040;
+    z-index: 100;
+}
+.produk-more p a:hover{
+    background-color: #fa4723;
+    transition: .3s
+}
+.produk-title, .blog-title{
+    letter-spacing: 2px;
+}
+.produk-price, .blog-date{
+    font-size: 1.2vw;
+}
+/*banner*/
+.banner{
+    clear: both;
+    width: 100%;
+    height: 35vw;
+    background-image: url(../image/banner.jpg);
+    background-size: cover;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.banner-des{
+    width: 47%;
+    padding: 10% 0%;
+    float: right;
+    font-size: 1.1vw;
+    margin-right: 10%;
+    color: #616161;
+}
+.banner-des h2{
+    color: rgb(148, 29, 16);
+    font-weight: 700;
+    font-size: 2.5vw;
+}
+.banner-des p{
+    font-size: 1.3vw;
+    line-height: 1.4em;
+}
+
+/*blog*/
+.blog ul li{
+    width: 22%;
+}
+.blog-conten img{
+    width: 100%;
+    height: 20vw;
+}
+.blog-title, .blog-date{
+    text-align: left;
+    font-size: 1.1vw;
+}
+.blog-more{
+    text-align: left;
+    text-decoration: underline;
+    font-size: 1.3vw;
+}
+/*footer*/
+.footer{
+    clear: both;
+    width: 96%;
+    height: 200px;
+    background-color: black;
+    color: white;
+    padding: 2%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.3vw;
+}
+.footer ul{
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+.footer ul li{
+    list-style: none;
+    float: left;
+    width: 29%;
+    height: auto;
+    padding-left: 2%;
+    letter-spacing: 1px;
+    background-color: black;
+}
+.footer ul li:first-child{
+    padding-right: 5%;
+    font-size: 1.2vw;
+    line-height: 1.5em;
+}
+.footer ul li a{
+    color: white;
+}
+.footer2{
+    clear: both;
+    width: 100%;
+    height: 12%;
+    text-align: center;
+    background-color: #000000;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    border-top: 1px grey solid;
+    line-height: 380%;
+    letter-spacing: 1px;
+    font-size: 1.1vw;
+}
+
+@media screen and (max-width: 1280px) {
+    .header{
+        height: 550px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .header{
+        height: 450px;
+    }
+    .footer{
+        font-size: 1.5vw;
+    }
+    .footer ul li:first-child{
+        font-size: 1.5vw;
+    }
+}
+@media screen and (max-width: 900px) {
+    .header{
+        height: 400px;
+    }
+    .header-title{
+        margin-top: 5%;
+    }
+    .header-title h1{
+        font-size: 2.5vw;
+    }
+    .header-title p{
+        font-size: 1.7vw;
+    }
+    .nav{
+        height: 25%;
+    }
+    .nav-2{
+        margin-top: -20%;
+    }
+    .welcome h2{
+        font-size: 1.9vw;
+    }
+    .welcome p{
+        font-size: 1.7vw;
+    }
+    .banner-des{
+        padding: 7% 0%;
+    }
+    .banner-des p{
+        font-size: 1.7vw;
+    }
+    .produk ul li, .blog ul li{
+        font-size: 1.5vw;
+    }
+    .produk-price{
+        font-size: 1.5vw;
+    }
+    .blog-title, .blog-date{
+        font-size: 1.5vw;
+    }
+    .blog-more{
+        font-size: 1.7vw;
+    }
+    .produk-more{
+        margin-top: -24.37vw;
+        padding: 31.5% 0%;
+    }
+    .footer{
+        height:250px;
+        font-size: 1.7vw;
+    }
+    .footer ul li:first-child{
+        font-size: 1.6vw;
+    }
+    .footer2{
+        font-size: 1.6vw;
+    }
+}
+@media screen and (max-width: 750px) {
+    .header{
+        height: 300px;
+    }
+    .header-title{
+        margin-left: 25%;
+        margin-top: 1%;
+        color: #3a3a3a;
+        background-color: white;
+        opacity: .9;
+        padding: 2% 3%;
+        align-items: center;
+    }
+    .header-title h1, .header-title p {
+        text-align: center;
+    }
+    .header-button{
+        margin-left: 38%;
+    }
+
+    .nav{
+        height: 23%;
+    }
+    .nav-1 img{
+        margin-left: 29%;
+        margin-top: 2%;
+    }
+    .nav-1 ul.first{
+        display: block;
+    }
+    .nav-1 ul.first li a i:hover .nav:hover{
+        background-color: unset;
+        opacity: unset;
+    }
+    .nav-1 ul li{
+        font-size: 20px;
+    }
+    .nav-2 ul li{
+        display: none;
+    }
+    .nav-1 ul.first li:hover .nav-2 ul li{
+        display: block;
+    }
+    .nav-2 ul li:last-child{
+        display: block;
+        margin-top: -4%;
+    }
+
+    .produk ul li, .blog ul li{
+        width: 44%;
+    }
+    .produk2 img, .blog-conten img{
+        width: 100%;
+        height: 30vw;
+    }
+    .produk-more{
+        margin-top: -31vw;
+        padding: 29.1% 0%;
+    }
+    .welcome p{
+        font-size: 1.7vw;
+    }
+    .banner-des{
+        padding: 5% 0%;
+    }
+    .banner-des p{
+        font-size: 1.8vw;
+    }
+    .footer{
+        height: 300px;
+        font-size: 2vw;
+    }
+    .footer ul li{
+        width: 45%;
+        padding-left: 0%;
+    }
+    .footer ul li:first-child{
+        font-size: 2vw;
+        padding-left: 0%;
+        width: 90%;
+    }
+    .footer2{
+        font-size: 1.8vw;
+    }
+}
+@media screen and (max-width: 580px) {
+    .header{
+        height: 240px;
+        background-attachment: unset;
+        background-position-x: right;
+    }
+    .header-title{
+        margin-left: 5%;
+        margin-top: 5%;
+        color: #3a3a3a;
+        background-color:white;
+        opacity: .9;
+        padding: 2% 3%;
+        align-items: center;
+    }
+    .header-title h1, .header-title p {
+        text-align: left;
+    }
+    .header-title p span{
+        display: none;
+    }
+    .header-button{
+        margin-left: 0%;
+    }
+    .nav{
+        background-color: white;
+        opacity: .9;
+    }
+    .nav:hover{
+        opacity: 1;
+    }
+    .nav-1 img{
+        margin-left: 24%;
+    }
+    .nav-1 ul{
+        list-style: none;
+        float: right;
+        margin-right: 3%;
+        width: 14%;
+        display: block;
+        margin-top: 1.5%;
+    }
+    .nav-1 ul li{
+        float: left;
+        padding: 1% 10%;
+        text-align: center;
+    }
+    .nav-1 ul li a{
+        font-size: 1.7vw;
+    }
+    .nav-1 ul li#cart{
+        display: block;
+    }
+    .nav-2 ul li:last-child{
+        display: none;
+    }
+    .produk-more{
+        margin-top: -30.25vw 
+    }
+    .footer{
+        height: 320px;
+        font-size: 2.4vw;
+    }
+    .footer ul li:first-child, .footer2{
+        font-size: 2.4vw;
+    }
+}
+@media screen and (max-width: 480px) {
+    .header{
+        height: 190px;
+    }
+    .header-title{
+        margin-left: 5%;
+        margin-top: 5%;
+        color: #3a3a3a;
+        background-color:white;
+        opacity: .9;
+        padding: 2% 3%;
+        align-items: center;
+    }
+    .header-title p{
+        font-size: 1.9vw;
+    }
+    .nav-1 img{
+        margin-left: 20%;
+    }
+    .welcome p{
+        font-size: 2.2vw;
+        padding: 0% 10%;
+    }
+    .produk ul li, .blog ul li{
+        width: 89%;
+        font-size: 2.2vw;
+    }
+    .produk2 img, .blog-conten img{
+        width: 100%;
+        height: 47vw;
+    }
+    .produk2, .blog-conten{
+        padding-bottom: 5%;
+    }
+    .produk-price{
+        font-size: 2.2vw;
+    }
+    .produk-more{
+        margin-top: -47vw;
+        padding: 23.5% 0%;
+    }
+    .produk-more p{
+        font-size: 1.9vw;
+    }
+    .produk-more p a{
+        color: white;
+        font-size: 1.7vw;
+        padding: 2% 3%;
+        background-color: #ff6040;
+        z-index: 100;
+    }
+    .banner{
+        height: 39vw;
+    }
+    .banner-des{
+        margin-right: 7%;
+        width: 50%;
+    }
+    .banner-des p{
+        font-size: 2.1vw;
+    }
+    .blog-title{
+        text-align: center;
+        font-size: 2.2vw;
+    }
+    .blog-more, .blog-date{
+        text-align: left;
+        font-size: 2.8vw;
+    }
+    .footer ul li:first-child{
+        font-size: 3vw;
+        padding-right: 3%;
+    }
+    .footer, .footer ul li:first-child, .footer2{
+        font-size: 3vw;
+    }
+}
